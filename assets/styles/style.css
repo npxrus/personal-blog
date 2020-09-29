@@ -63,3 +63,55 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* General */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  height: 581px;
+  padding: 0 7.5em;
+
+  background-image: url("../images/bg-header@1.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Navigation */
+.menu {
+  display: flex;
+}
+
+/* Logo */
+.logo {
+  flex-grow: 1.5;
+}
+
+/* Navigation menu */
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.menu__link {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #2e2f22;
+  text-decoration: none;
+}

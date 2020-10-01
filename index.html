@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:400"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Spectral+SC:700"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
   <body>
@@ -38,10 +42,11 @@
     </header>
     <main class="main">
       <h1 class="visually-hidden">Мой персональный блог</h1>
+
       <section class="main__articles articles" id="articles">
         <header class="articles__header">
-          <h2 class="articles__title title">Все статьи</h2>
-          <select name="themes" class="btn">
+          <h2 class="title">Все статьи</h2>
+          <select name="themes" class="btn btn-select">
             <option value="select">Выбрать тему</option>
             <option value="photos">Фотографии</option>
             <option value="recipes">Рецепты</option>
@@ -51,250 +56,260 @@
             <option value="all">Все категории</option>
           </select>
         </header>
-        <ul class="articles__list">
-          <li class="articles__item">
-            <a href="#" class="articles__link">
-              <div class="card">
-                <img
-                  src="assets/images/article-1@1.jpg"
-                  alt="Путешествие в Берлин"
-                  class="card__image"
-                />
-                <div class="card__text">
-                  <h3 class="card__title">Путешествие в Берлин в августе</h3>
-                  <p class="card__annotation">
-                    Летний месяц я провела в столице Германии вместе с друзьями.
-                    И вот как это было!
-                  </p>
-                  <div class="card__meta">
-                    <span class="card__tag">Теги: путешествия</span>
-                    <time class="card__date" datetime="2020-09-29"
-                      >29.09.2020</time
-                    >
+        <div class="wrapper">
+          <ul class="articles__list">
+            <li class="articles__item">
+              <a href="#" class="articles__link">
+                <div class="card">
+                  <img
+                    src="assets/images/article-1@1.jpg"
+                    alt="Путешествие в Берлин"
+                    class="card__image"
+                  />
+                  <div class="card__text">
+                    <h3 class="card__title title title--sm">
+                      Путешествие в Берлин в августе
+                    </h3>
+                    <p>
+                      Летний месяц я провела в столице Германии вместе с
+                      друзьями. И вот как это было!
+                    </p>
+                    <div class="card__meta meta">
+                      <span>Теги: путешествия</span>
+                      <time datetime="2020-09-29">29.09.2020</time>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li class="articles__item">
-            <a href="#" class="articles__link">
-              <div class="card">
-                <img
-                  src="assets/images/article-2@1.jpg"
-                  alt="Где выпить колдбрю в Москве"
-                  class="card__image"
-                />
-                <div class="card__text">
-                  <h3 class="card__title">Где выпить колдбрю в Москве</h3>
-                  <p class="card__annotation">
-                    Собрала для вас список любимых кофеен, где подают лучший
-                    летний напиток.
-                  </p>
-                  <div class="card__meta">
-                    <span class="card__tag">Теги: город</span>
-                    <time class="card__date" datetime="2020-07-24"
-                      >24.07.2020</time
-                    >
+              </a>
+            </li>
+            <li class="articles__item">
+              <a href="#" class="articles__link">
+                <div class="card">
+                  <img
+                    src="assets/images/article-2@1.jpg"
+                    alt="Где выпить колдбрю в Москве"
+                    class="card__image"
+                  />
+                  <div class="card__text">
+                    <h3 class="card__title title title--sm">
+                      Где выпить колдбрю в Москве
+                    </h3>
+                    <p>
+                      Собрала для вас список любимых кофеен, где подают лучший
+                      летний напиток.
+                    </p>
+                    <div class="card__meta meta">
+                      <span>Теги: город</span>
+                      <time datetime="2020-07-24">24.07.2020</time>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li class="articles__item">
-            <a href="#" class="articles__link">
-              <div class="card">
-                <img
-                  src="assets/images/article-3@1.jpg"
-                  alt="Книжные рекомендации"
-                  class="card__image"
-                />
-                <div class="card__text">
-                  <h3 class="card__title">Прочитано: книжные рекомендации</h3>
-                  <p class="card__annotation">
-                    Рассказываю о прочитанных за последнее время книгах:
-                    фавориты и провалы.
-                  </p>
-                  <div class="card__meta">
-                    <span class="card__tag">Теги: книги</span>
-                    <time class="card__date" datetime="2020-07-15"
-                      >15.07.2020</time
-                    >
+              </a>
+            </li>
+            <li class="articles__item">
+              <a href="#" class="articles__link">
+                <div class="card">
+                  <img
+                    src="assets/images/article-3@1.jpg"
+                    alt="Книжные рекомендации"
+                    class="card__image"
+                  />
+                  <div class="card__text">
+                    <h3 class="card__title title title--sm">
+                      Прочитано: книжные рекомендации
+                    </h3>
+                    <p>
+                      Рассказываю о прочитанных за последнее время книгах:
+                      фавориты и провалы.
+                    </p>
+                    <div class="card__meta meta">
+                      <span>Теги: книги</span>
+                      <time datetime="2020-07-15">15.07.2020</time>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li class="articles__item">
-            <a href="#" class="articles__link">
-              <div class="card">
-                <img
-                  src="assets/images/article-4@1.jpg"
-                  alt="Снимки на плёнку"
-                  class="card__image"
-                />
-                <div class="card__text">
-                  <h3 class="card__title">Снимки на плёнку</h3>
-                  <p class="card__annotation">
-                    Поделилась с вами весенними фотографиями, и секретами
-                    удачных снимков.
-                  </p>
-                  <div class="card__meta">
-                    <span class="card__tag">Теги: фотографии</span>
-                    <time class="card__date" datetime="2020-06-29"
-                      >29.06.2020</time
-                    >
+              </a>
+            </li>
+            <li class="articles__item articles__item--lg">
+              <a href="#" class="articles__link articles__link--lg">
+                <div class="card">
+                  <img
+                    src="assets/images/article-4@1.jpg"
+                    alt="Снимки на плёнку"
+                    class="card__image"
+                  />
+                  <div class="card__text card__text--lg">
+                    <h3 class="card__title title title--md">
+                      Снимки на плёнку
+                    </h3>
+                    <p>
+                      Поделилась с вами весенними фотографиями, и секретами
+                      удачных снимков.
+                    </p>
+                    <div class="card__meta meta meta--lg">
+                      <span>Теги: фотографии</span>
+                      <time datetime="2020-06-29">29.06.2020</time>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li class="articles__item">
-            <a href="#" class="articles__link">
-              <div class="card">
-                <img
-                  src="assets/images/article-5@1.jpg"
-                  alt="Домашний чизкейк"
-                  class="card__image"
-                />
-                <div class="card__text">
-                  <h3 class="card__title">Домашний чизкейк</h3>
-                  <p class="card__annotation">
-                    Что может быть лучше чизкейка с сезонными ягодами? Только
-                    домашний чизкейк!
-                  </p>
-                  <div class="card__meta">
-                    <span class="card__tag">Теги: рецепты</span>
-                    <time class="card__date" datetime="2020-06-24"
-                      >24.06.2020</time
-                    >
+              </a>
+            </li>
+            <li class="articles__item articles__item--lg">
+              <a href="#" class="articles__link articles__link--lg">
+                <div class="card">
+                  <img
+                    src="assets/images/article-5@1.jpg"
+                    alt="Домашний чизкейк"
+                    class="card__image"
+                  />
+                  <div class="card__text card__text--lg">
+                    <h3 class="card__title title title--md">
+                      Домашний чизкейк
+                    </h3>
+                    <p>
+                      Что может быть лучше чизкейка с сезонными ягодами? Только
+                      домашний чизкейк!
+                    </p>
+                    <div class="card__meta meta meta--lg">
+                      <span>Теги: рецепты</span>
+                      <time datetime="2020-06-24">24.06.2020</time>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <button class="btn">Показать ещё</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <footer class="articles__footer section__footer">
+          <button class="btn">Показать ещё</button>
+        </footer>
       </section>
       <section class="about" id="about">
         <header class="about__header">
           <h2 class="about__title title">Обо мне</h2>
         </header>
-        <img
-          src="assets/images/me@1.jpg"
-          alt="Моя фотография"
-          class="about__image"
-        />
-        <div class="textblock">
-          <p class="textblock__text">
-            Всем привет! Меня зовут Аня, и это мой личный блог. Здесь ты найдёшь
-            рассказы о моих путешествиях, снимки на плёнку, рецепты, обзоры на
-            книги. В общем, тексты о том, что мне инетресно.
-          </p>
-          <p class="textblock__text">
-            Я работаю копирайтером, поэтому мой блоге — это ещё и моё портфолио.
-            Ниже размещены несколько моих лучших рабочих текстов. Буду рада
-            новым сотрудничествам!
-          </p>
-          <p class="textblock__text">
-            Если вы хотите написать мне — это можно сделать в соцсетях или через
-            форму. Всегда приятно услышать обратную связь от читателей и
-            познакомиться поближе.
-          </p>
-          <p class="textblock__text">Приятного чтения!</p>
-          <blockquote class="textblock__cite">
-            Я верю, что каждый раз пробуя новое, выходящее за зону моего
-            комфорта, я действительно узнаю настояющую себя.
-          </blockquote>
+        <div class="wrapper">
+          <img
+            src="assets/images/me@1.jpg"
+            alt="Моя фотография"
+            class="about__image"
+          />
+          <div class="textblock">
+            <p class="textblock__text text">
+              Всем привет! Меня зовут Аня, и это мой личный блог. Здесь ты
+              найдёшь рассказы о моих путешествиях, снимки на плёнку, рецепты,
+              обзоры на книги. В общем, тексты о том, что мне инетресно.
+            </p>
+            <p class="textblock__text text">
+              Я работаю копирайтером, поэтому мой блоге — это ещё и моё
+              портфолио. Ниже размещены несколько моих лучших рабочих текстов.
+              Буду рада новым сотрудничествам!
+            </p>
+            <p class="textblock__text text">
+              Если вы хотите написать мне — это можно сделать в соцсетях или
+              через <a href="#contact">форму</a>. Всегда приятно услышать
+              обратную связь от читателей и познакомиться поближе.
+            </p>
+            <p class="textblock__text text">Приятного чтения!</p>
+            <blockquote class="textblock__cite cite">
+              Я верю, что каждый раз пробуя новое, выходящее за зону моего
+              комфорта, я действительно узнаю настояющую себя.
+            </blockquote>
+          </div>
         </div>
       </section>
       <section class="portfolio" id="portfolio">
         <header class="portfolio__header">
           <h2 class="portfolio__title title">Портфолио</h2>
         </header>
-        <ul class="portfolio__list">
-          <li class="portfolio__title">
-            <a href="#" class="portfolio__link">
-              <div class="pcard">
-                <p class="pcard__client">Блог HTML Academy</p>
-                <p class="pcard__name">«Как учиться продуктивно»</p>
-                <p class="pcard__description">
-                  Про основные методы обучения, которые помогут быстро и надолго
-                  запомнить информацию.
-                </p>
-              </div>
-            </a>
-          </li>
-          <li class="portfolio__title">
-            <a href="#" class="portfolio__link">
-              <div class="pcard">
-                <p class="pcard__client">Журнал «LNK»</p>
-                <p class="pcard__name">
-                  «Зачем поцели нужны человеку? И какие они бывают»
-                </p>
-                <p class="pcard__description">
-                  Поцелуи — повсеместная ежедневная практика. Но зачем люди
-                  целуются? Какие смысли вкладывают в этот ритуал? И где корни
-                  этой практики?
-                </p>
-              </div>
-            </a>
-          </li>
-          <li class="portfolio__title">
-            <a href="" class="portfolio__link">
-              <div class="pcard">
-                <p class="pcard__client">Журнал «Т — Л»</p>
-                <p class="pcard__name">
-                  «Советы по эффективной удалённой работе»
-                </p>
-                <p class="pcard__description">
-                  Поделилась лайфхаками, которые помогают мне работать
-                  продуктивно из дома.
-                </p>
-              </div>
-            </a>
-          </li>
-        </ul>
+        <div class="wrapper">
+          <ul class="portfolio__list">
+            <li class="portfolio__title">
+              <a href="#" class="portfolio__link">
+                <div class="pcard">
+                  <p class="pcard__client">Блог HTML Academy</p>
+                  <p class="pcard__name">«Как учиться продуктивно»</p>
+                  <p class="pcard__description">
+                    Про основные методы обучения, которые помогут быстро и
+                    надолго запомнить информацию.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__title">
+              <a href="#" class="portfolio__link">
+                <div class="pcard">
+                  <p class="pcard__client">Журнал «LNK»</p>
+                  <p class="pcard__name">
+                    «Зачем поцелуи нужны человеку? И какие они бывают»
+                  </p>
+                  <p class="pcard__description">
+                    Поцелуи — повсеместная ежедневная практика. Но зачем люди
+                    целуются? Какие смысли вкладывают в этот ритуал? И где корни
+                    этой практики?
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__title">
+              <a href="" class="portfolio__link">
+                <div class="pcard">
+                  <p class="pcard__client">Журнал «Т — Л»</p>
+                  <p class="pcard__name">
+                    «Советы по эффективной удалённой работе»
+                  </p>
+                  <p class="pcard__description">
+                    Поделилась лайфхаками, которые помогают мне работать
+                    продуктивно из дома.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
         <button class="btn">ПОКАЗАТЬ ЕЩЁ</button>
       </section>
       <section class="contact" id="contact">
         <header class="contact__header">
-          <h2 class="contact__title">Написать мне</h2>
+          <h2 class="contact__title title">Написать мне</h2>
         </header>
-        <form action="" class="contact__form form">
-          <label for="name" class="form__label">
-            Ваше имя
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="form__input"
-              placeholder="Иван Иванов"
-              required
-            />
-          </label>
-          <label for="email" class="form__label">
-            Email
-            <input
-              type="email"
-              class="form__input"
-              placeholder="google@gmail.com"
-              required
-            />
-          </label>
-          <label for="message" class="form__label">
-            Сообщение
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              class="form__message"
-              minlength="10"
-              maxlength="200"
-            ></textarea>
-          </label>
-          <button type="submit" class="btn">ОТПРАВИТЬ</button>
-        </form>
+        <div class="wrapper wrapper--col">
+          <form action="" class="contact__form form">
+            <label for="name" class="form__label">
+              Ваше имя
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form__input"
+                placeholder="Иван Иванов"
+                required
+              />
+            </label>
+            <label for="email" class="form__label">
+              Email
+              <input
+                type="email"
+                class="form__input"
+                placeholder="google@gmail.com"
+                required
+              />
+            </label>
+            <label for="message" class="form__label">
+              Сообщение
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                class="form__message"
+                minlength="10"
+                maxlength="200"
+              ></textarea>
+            </label>
+            <button type="submit" class="btn">ОТПРАВИТЬ</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer">

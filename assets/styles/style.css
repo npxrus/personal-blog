@@ -36,6 +36,7 @@ ol[class] {
 }
 
 a:not([class]) {
+  -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
 }
 
@@ -57,7 +58,9 @@ select {
 
 @media (prefers-reduced-motion: reduce) {
   * {
+    -webkit-animation-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
@@ -65,6 +68,17 @@ select {
 }
 
 /* General */
+body {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #202117;
+}
+
+a[class] {
+  color: #202117;
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -94,7 +108,7 @@ select {
 }
 
 .title {
-  font-family: Spectral SC;
+  font-family: Spectral SC, serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -118,18 +132,12 @@ select {
 
 .btn {
   padding: 12px 57px;
-
   border: 1px solid #202117;
   box-sizing: border-box;
   border-radius: 10px;
   background: transparent;
   cursor: pointer;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
   line-height: 22px;
-  color: #202117;
 }
 
 /* Header */
@@ -142,6 +150,10 @@ select {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.page__header {
+  background-image: url("../images/bg-header-2.jpg");
 }
 
 /* Navigation */
@@ -163,12 +175,8 @@ select {
 }
 
 .menu__link {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 25px;
-  color: #2e2f22;
   text-decoration: none;
 }
 
@@ -204,12 +212,7 @@ select {
 
 .articles__link {
   text-decoration: none;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
   line-height: 26px;
-  color: #2e2f22;
 }
 
 /* Card */
@@ -272,21 +275,13 @@ select {
 }
 
 .text {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
   line-height: 26px;
-  color: #2e2f22;
 }
 
 .cite {
-  font-family: Open Sans;
   font-style: italic;
-  font-weight: normal;
   font-size: 30px;
   line-height: 40px;
-  color: #2e2f22;
 }
 
 /* Portfolio */
@@ -319,13 +314,8 @@ select {
 }
 
 .portfolio__link {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
   line-height: 26px;
   text-align: center;
-  color: #2e2f22;
   text-decoration: none;
 }
 
@@ -339,6 +329,50 @@ select {
 
 .pcard__title {
   margin: 44px 0 17px;
+}
+
+/* Contact */
+.contact__form {
+  width: 90%;
+  padding: 53px 80px 62px;
+
+  background-image: url("../images/bg-form.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form__group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+
+.form__input {
+  min-width: 0;
+  padding: 20px;
+
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #202117;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.form__message {
+  width: 100%;
 }
 
 /* Footer */
@@ -359,11 +393,7 @@ select {
 }
 
 .list__link {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 25px;
-  color: #2e2f22;
   text-decoration: none;
 }

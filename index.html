@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мой личный блог</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Spectral+SC:700"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400&family=Spectral+SC:700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/styles/style.css" />
@@ -43,7 +39,7 @@
     <main class="main">
       <h1 class="visually-hidden">Мой персональный блог</h1>
 
-      <section class="main__articles articles" id="articles">
+      <section class="articles" id="articles">
         <header class="articles__header">
           <h2 class="title">Все статьи</h2>
           <select name="themes" class="btn btn-select">
@@ -194,6 +190,7 @@
             alt="Моя фотография"
             class="about__image"
           />
+          <!-- TODO Расставить вертикальные отступы -->
           <div class="textblock">
             <p class="textblock__text text">
               Всем привет! Меня зовут Аня, и это мой личный блог. Здесь ты
@@ -205,12 +202,14 @@
               портфолио. Ниже размещены несколько моих лучших рабочих текстов.
               Буду рада новым сотрудничествам!
             </p>
+            <!-- TODO Изменить цвет ссылки -->
             <p class="textblock__text text">
               Если вы хотите написать мне — это можно сделать в соцсетях или
               через <a href="#contact">форму</a>. Всегда приятно услышать
               обратную связь от читателей и познакомиться поближе.
             </p>
             <p class="textblock__text text">Приятного чтения!</p>
+            <!-- TODO Добавить вертикальную полосу -->
             <blockquote class="textblock__cite cite">
               Я верю, что каждый раз пробуя новое, выходящее за зону моего
               комфорта, я действительно узнаю настояющую себя.
@@ -238,6 +237,7 @@
                 </div>
               </a>
             </li>
+            <!-- TODO Поменять цвет шрифта -->
             <li class="portfolio__item portfolio__item--two">
               <a href="#" class="portfolio__link portfolio__link--light">
                 <div class="portfolio__pcard pcard">
@@ -274,43 +274,53 @@
         </footer>
       </section>
       <section class="contact" id="contact">
-        <header class="contact__header">
-          <h2 class="contact__title title">Написать мне</h2>
+        <header class="center">
+          <h2 class="title">Написать мне</h2>
         </header>
-        <div class="wrapper wrapper--col">
+        <div class="wrapper center">
           <form action="" class="contact__form form">
-            <label for="name" class="form__label">
-              Ваше имя
-              <input
-                type="text"
-                name="name"
-                id="name"
-                class="form__input"
-                placeholder="Иван Иванов"
-                required
-              />
-            </label>
-            <label for="email" class="form__label">
-              Email
-              <input
-                type="email"
-                class="form__input"
-                placeholder="google@gmail.com"
-                required
-              />
-            </label>
-            <label for="message" class="form__label">
-              Сообщение
+            <!-- TODO Расставить вертикальные отступы -->
+            <div class="form__group">
+              <div class="form__field">
+                <label for="name" class="form__label title title--sm">
+                  Ваше имя
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form__input"
+                  placeholder="Иван Иванов"
+                  required
+                />
+              </div>
+              <div class="form__field">
+                <label for="email" class="form__label title title--sm">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  class="form__input"
+                  placeholder="google@gmail.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form__message form__field">
+              <label for="message" class="form__label title title--sm">
+                Сообщение
+              </label>
               <textarea
                 name="message"
                 id="message"
                 cols="30"
                 rows="10"
-                class="form__message"
+                class="form__input"
                 minlength="10"
                 maxlength="200"
+                placeholder="Напишите здесь ваше сообщение."
               ></textarea>
-            </label>
+            </div>
             <button type="submit" class="btn">ОТПРАВИТЬ</button>
           </form>
         </div>

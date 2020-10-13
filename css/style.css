@@ -51,6 +51,10 @@ figure {
   background-color: #f1e8e1;
 }
 
+.article-header {
+  background-image: url("../img/bg-header-2.jpg");
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -93,6 +97,14 @@ figure {
 
   margin-top: 84px;
   margin-bottom: 50px;
+}
+
+.section-header h1 {
+  font-family: "Spectral SC", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 55px;
 }
 
 .section-header h2 {
@@ -163,6 +175,10 @@ figure {
 
 .meta {
   color: rgba(46, 47, 34, 0.7);
+}
+
+.meta span {
+  margin-right: 18px;
 }
 
 .article-item .meta {
@@ -296,6 +312,134 @@ figure {
 
   border: 1px solid #202117;
   border-radius: 10px;
+}
+
+article figure {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+article figcaption {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.like {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 92px;
+}
+
+.social-wrapper {
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 37px;
+}
+
+.articles-link {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+}
+
+.articles-link::after {
+  content: url("../img/arrow.svg");
+
+  margin-left: 26px;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+}
+
+.social-list > li + li {
+  margin-left: 32px;
+}
+
+.comments {
+  width: 793px;
+  padding: 14px 0 19px 101px;
+  margin: 0;
+  margin-top: 65px;
+
+  font-size: 16px;
+  line-height: 22px;
+
+  background-color: #ece1e1;
+
+  border-radius: 10px;
+}
+
+.comment-item {
+  margin-bottom: 55px;
+}
+
+.comment-author {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.comment-author img {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  margin-right: 13px;
+
+  border-radius: 10px;
+}
+
+.comment-author span {
+  padding: 0;
+  margin: 0;
+
+  font-weight: bold;
+}
+
+.section-form h2 {
+  margin-top: 77px;
+
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.comment-form {
+  width: 793px;
+}
+
+.comment-form .form-wrapper {
+  flex-direction: row;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  width: 48%;
+}
+
+.comment-form textarea {
+  min-width: 0;
+  width: 48%;
+  padding: 18px 20px;
+
+  border: 1px solid #2e2f22;
+  border-radius: 10px;
+}
+
+.comment-input {
+  min-width: 0;
+  padding: 15px 0;
+
+  border: none;
+  border-bottom: 1px solid #2e2f22;
 }
 
 .main-footer {

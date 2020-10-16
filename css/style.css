@@ -41,6 +41,34 @@ figure {
   border-radius: 10px;
 }
 
+.button-gray {
+  appearance: none;
+  outline: none;
+  background: #d7d1c9;
+  position: relative;
+}
+
+.button-gray::after {
+  content: url("../img/triangle.svg");
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  bottom: 0;
+  font-size: 60%;
+  line-height: 30px;
+  padding: 0 7px;
+  color: white;
+  pointer-events: none;
+}
+
+.button-gray select {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: #d7d1c9;
+  cursor: pointer;
+}
+
 .main-header {
   height: 581px;
 
@@ -425,8 +453,7 @@ article figcaption {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: end;
-  width: 48%;
+  width: 40%;
 }
 
 .comment-form textarea {

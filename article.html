@@ -103,10 +103,8 @@
         </p>
         <div class="social-wrapper spaced">
           <div class="like">
-            <a href="#">
-              <img src="img/like.svg" alt="Лайк" />
-            </a>
-            <span id="like">16</span>
+            <img src="img/like.svg" alt="Лайк" />
+            <span id="likes">16</span>
           </div>
           <ul class="social-list">
             <li>
@@ -191,10 +189,13 @@
                 placeholder="Почта"
                 required
               />
-              <button type="submit" class="button">Отправить</button>
+              <button type="submit" class="button submit-button">
+                Отправить
+              </button>
             </div>
             <textarea
               name="comment"
+              class="message"
               id="comment"
               cols="30"
               rows="10"
@@ -223,5 +224,7 @@
         </li>
       </ul>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -314,6 +314,10 @@ figure {
   border-radius: 10px;
 }
 
+.red {
+  color: red;
+}
+
 article figure {
   margin-top: 40px;
   margin-bottom: 40px;
